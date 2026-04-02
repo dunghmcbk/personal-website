@@ -1,0 +1,36 @@
+/* ============================================================
+   ANIMATIONS.CSS — Hiệu ứng chuyển động
+   ============================================================ */
+
+/* ── Fade-in cho content khi đổi note ───────────────────── */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* ── Desktop load ─────────────────────────────────────────── */
+@keyframes desktopFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.desktop {
+  animation: desktopFade 0.3s ease forwards;
+}
+
+/* ── Smooth scrolling ────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Hover transitions đã được khai báo trong style.css ─── */
