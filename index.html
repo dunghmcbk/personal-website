@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tên Của Bạn</title>
+
+  <!-- Favicon (emoji làm icon tạm thời) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/sidebar.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+
+<body>
+
+  <!-- ====================================================
+       DESKTOP — Toàn bộ màn hình giả lập desktop
+       ==================================================== -->
+  <div class="desktop">
+
+    <!-- ── Desktop Content (giữa màn hình) ──────────────── -->
+    <div class="desktop-content">
+
+      <!-- macOS-style Window -->
+      <div class="window">
+
+        <!-- Window Body: Sidebar + Content -->
+        <div class="window-body">
+
+          <!-- SIDEBAR -->
+          <div class="sidebar">
+
+            <!-- Sidebar Header: traffic lights + actions -->
+            <div class="sidebar-topbar">
+              <div class="traffic-lights">
+                <div class="traffic-light red"    title="Đóng"></div>
+                <div class="traffic-light yellow" title="Thu nhỏ"></div>
+                <div class="traffic-light green"  title="Phóng to"></div>
+              </div>
+              <div class="sidebar-actions">
+                <!-- Icon AA: thay đổi font -->
+                <button class="sidebar-action-btn" title="Định dạng văn bản" id="btn-font">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <text x="1" y="16" font-family="-apple-system,sans-serif" font-size="9" font-weight="700" fill="currentColor">A</text>
+                    <text x="10" y="18" font-family="-apple-system,sans-serif" font-size="12" font-weight="400" fill="currentColor">A</text>
+                  </svg>
+                </button>
+                <!-- Icon Note: tạo note mới -->
+                <button class="sidebar-action-btn" title="Tạo note mới" id="btn-new-note">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20h9"/>
+                    <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="sidebar-search-wrap">
+              <div class="search-box">
+                <div class="search-icon">
+                  <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
+                    <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.8"/>
+                    <line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <input
+                  id="search-input"
+                  class="search-input"
+                  type="text"
+                  placeholder="Search"
+                  autocomplete="off"
+                  spellcheck="false"
+                />
+                <button id="search-clear" class="search-clear" title="Xóa" hidden>✕</button>
+              </div>
+            </div>
+
+            <!-- Danh sách notes -->
+            <div class="sidebar-body" id="sidebar-body">
+
+              <!-- Pinned notes -->
+              <div class="sidebar-section-label" id="label-pinned">Pinned</div>
+              <div id="pinned-list"></div>
+
+              <!-- Other notes -->
+              <div class="sidebar-section-label" id="label-notes" style="margin-top: 8px;">Notes</div>
+              <div id="notes-list"></div>
+
+              <!-- Search results (ẩn khi không tìm kiếm) -->
+              <div class="sidebar-section-label" id="label-results" hidden>Results</div>
+              <div id="search-results"></div>
+              <div id="search-empty" class="search-empty" hidden>No results found.</div>
+
+            </div>
+          </div>
+
+          <!-- CONTENT AREA -->
+          <div class="content-area">
+            <button class="mobile-back-btn" id="mobile-back">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+              Notes
+            </button>
+            <div id="note-content" class="fade-in">
+              <!-- Nội dung note được render bằng JS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.desktop -->
+
+  <!-- ====================================================
+       JAVASCRIPT — Load theo thứ tự quan trọng
+       content.js trước (có dữ liệu), sau đó router & main
+       ==================================================== -->
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
