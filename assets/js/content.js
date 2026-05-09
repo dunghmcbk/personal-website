@@ -129,6 +129,33 @@ const NOTES = [
   },
 
   {
+    id: "april-update",
+    emoji: "📝",
+    title: "april update",
+    date: "2026-04-29",
+    pinned: false,
+    body: `
+      <h1>📝 april update</h1>
+      <p>hay fellas, april update is here. it's been a while since the last update and I've been busy with work and personal stuff.</p>
+
+      <p>today, I officially move to Sotatek to work as a BD Exectutive. Everyone is sp nice and supportive. 
+      Last Friday, the Company even play a quick radio session where everyone can share their personal feelings.</p>
+
+      <p>my tiktok channel is growing slowly but steadily, 800 followers as for now. I'm trying to post frequenty and some log about Sotatek work too! .</p>
+      
+      <p>warmed up some old leads and trying to schedule calls with some clients and made some remarkable progress.</p>
+
+      <h2>april goals</h2>
+      <ul>
+        <li>bring my new TikTok clipping to 1500+ followers (so far 800) </li>
+        <li>secure at least 2 meetings with clients (maybe?) </li>
+        <li>prove to myself that I can do it (yea I am delusional ngl) </li>
+        <li>impress my parents </li>
+      </ul>
+    `,
+  },
+
+  {
     id: "march-update",
     emoji: "📝",
     title: "march update",

@@ -99,12 +99,11 @@ const App = {
       resultsEl.hidden    = false;
       clearBtn.hidden     = false;
 
-      // Tìm trong title, excerpt và body (sau khi strip HTML)
+      // Tìm trong title và body (sau khi strip HTML)
       const matches = NOTES.filter((n) => {
         const bodyText = n.body.replace(/<[^>]*>/g, " ").toLowerCase();
         return (
-          n.title.toLowerCase().includes(q)   ||
-          n.excerpt.toLowerCase().includes(q) ||
+          n.title.toLowerCase().includes(q) ||
           bodyText.includes(q)
         );
       });
