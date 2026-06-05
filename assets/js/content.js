@@ -11,13 +11,15 @@ const NOTES = [
 
       <h2>currently</h2>
       <ul>
-        <li>Working as a BD Lead at <strong>Cyberk</strong></li>
+        <li>Working as a BD Executive at <strong>Sotatek</strong></li>
+        <li>Previously: BD Lead at <strong>Cyberk</strong></li>
         <li>A web3 lover</li>
         <li>Helping people do what they do best</li>
       </ul>
 
       <h2>career path</h2>
       <ul>
+        <li>bd executive @sotatek — top-tier tech company in Vietnam</li>
         <li>bd lead @cyberk — fastest web3 devhouse, $20,000+ value of contracts closed in 3 months</li>
         <li>content executive @hyraholdings — +40% total traffic and followers</li>
         <li>product/digital marketer @magika — French gummies brand for children, 200%+ ROAS</li>
@@ -125,6 +127,32 @@ const NOTES = [
       <h2>what I feel now: curious, excited, and thriving</h2>
       <p>keep chasing your inspirations. no one knows what to do when they begin. be a delusional optimist. just don't care what people think about you.</p>
       <p>also, I'm having the best months of my life right now — super happy about what I've achieved.</p>
+    `,
+  },
+
+  {
+    id: "may-update",
+    emoji: "📝",
+    title: "may update",
+    date: "2026-05-30",
+    pinned: false,
+    body: `
+      <h1>📝 may update</h1>
+      <p>hey fellas, may update is here. things have been moving fast and i'm genuinely excited about where life is heading.</p>
+
+      <p>officially settled in at Sotatek as a BD Executive. the team is great, the energy is good, and i'm starting to find my rhythm. still learning a ton but it feels right.</p>
+
+      <p>this month i got to work with a really promising partner team — one from UAE and one from Spain. first time collaborating with international partners like this and it was a whole different level. the potential is real and i'm pumped to see where it goes.</p>
+
+      <p>also somehow ended up being the #3 guy in a team of 20 absolute baddies. no idea how that happened but i'm not complaining — just trying to keep up and stay valuable.</p>
+
+      <p>on the TikTok front — i've decided to pause the account for now. the hustle is real at work and i'd rather put 100% into that than split my focus. TikTok will still be there, but right now the job comes first.</p>
+
+      <h2>may goals</h2>
+      <ul>
+        <li>hit 3000 followers on X</li>
+        <li>build an AI Agent for the sales workflow</li>
+      </ul>
     `,
   },
 
